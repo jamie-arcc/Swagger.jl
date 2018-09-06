@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PKGDIR=`readlink -e ${DIR}/..`
+PKGDIR=`greadlink -e ${DIR}/..`
 source ${DIR}/ver.sh
 
 PLUGINDIR=${PKGDIR}/plugin

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-PKG_DIR=`readlink -e ${DIR}/..`
+PKG_DIR=`greadlink -e ${DIR}/..`
 source ${DIR}/ver.sh
 
 BUILD_DIR=${PKG_DIR}/swagger-codegen-${VER_CODEGEN}
